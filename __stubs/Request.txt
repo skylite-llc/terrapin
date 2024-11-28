@@ -1,0 +1,7 @@
+import { z, AnyZodObject } from "zod";
+
+export default class REQUEST_NAME EXTENSION {
+     static schema: AnyZodObject = z.object({
+          body: z.object({}),
+        })
+}

@@ -1,0 +1,19 @@
+import { Service } from "typedi";
+
+@Service()
+export default class TRANSFORMER_NAME EXTENSION {
+    /**
+     * @constructs TRANSFORMER_NAME
+     */
+    constructor() {
+        SUPER
+    }
+
+    public data(data: object) {
+
+    }
+
+    public collection(data: object[]) {
+
+    }
+}

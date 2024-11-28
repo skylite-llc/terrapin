@@ -1,0 +1,14 @@
+import { Service } from "typedi";
+
+/**
+ * SERVICE_NAME
+ */
+ @Service()
+export default class SERVICE_NAME EXTENSION {
+    /**
+     * Constructor
+     */
+    constructor() {
+        SUPER
+    }
+}

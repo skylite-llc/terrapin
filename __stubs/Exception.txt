@@ -1,0 +1,10 @@
+
+
+export default class EXCEPTION_NAME EXTENSION {
+    /**
+     * @constructs EXCEPTION_NAME
+     */
+    constructor() {
+        SUPER
+    }
+}

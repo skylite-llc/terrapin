@@ -1,0 +1,37 @@
+import { z } from 'zod'
+
+export default class JOB_NAME EXTENSION {
+
+    /**
+     * @constructs JOB_NAME
+     */
+    constructor() {
+      super()
+      this.taskId = 'JOB_NAME'
+    }
+
+    /**
+     * Payload schema
+     * @inner
+     */
+    private static payloadSchema = z.object({}) // or null
+
+    /**
+     * Gets the payload schema
+     */
+    public static getSchema() {
+      return this.payloadSchema
+    }
+
+     /**
+      * Runs the job
+      */
+      public async run() {
+        try {
+            console.log("Task 1 is running.")
+            await this.exit(this.taskId, 0);
+        } catch(e) {
+            await this.fail(e)
+        }
+      }
+}

@@ -1,0 +1,95 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "lib": [
+      "es2016",
+      "dom"
+    ],
+    "esModuleInterop": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "resolveJsonModule": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "rootDir": "./src",
+    "strictNullChecks": false,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./src",
+    "skipLibCheck": true,
+    "paths": {
+      "@auth/*": [
+        "infrastructure/auth/*"
+      ],
+      "@config": [
+        "infrastructure/framework/config/index.ts"
+      ],
+      "@controllers/*": [
+        "presentation/http/controllers/*"
+      ],
+      "@database/*": [
+        "infrastructure/framework/database/*"
+      ],
+      "@decorators/*": [
+        "infrastructure/framework/decorators/*"
+      ],
+      "@exceptions/*": [
+        "application/core/exceptions/*"
+      ],
+      "@framework/*": [
+        "infrastructure/framework/*"
+      ],
+      "@helpers": [
+        "infrastructure/framework/helpers/index.ts"
+      ],
+      "@jobs/*": [
+        "infrastructure/jobs/*.ts"
+      ],
+      "@logger/*": [
+        "application/core/logger/*"
+      ],
+      "@middlewares/*": [
+        "presentation/http/middleware/*"
+      ],
+      "@models/*": [
+        "domain/models/*"
+      ],
+      "@notifications/*": [
+        "application/notifications/*"
+      ],
+      "@queue/*": [
+        "infrastructure/queue/*"
+      ],
+      "@repositories/*": [
+        "data/repositories/*"
+      ],
+      "@scheduler/*": [
+        "infrastructure/scheduler/*"
+      ],
+      "@services/*": [
+        "domain/services/*"
+      ],
+      "@transformers/*": [
+        "application/core/transformers/*"
+      ],
+      "@requests/*": [
+        "presentation/http/middleware/requests/*"
+      ],
+      "@policies/*": [
+        "presentation/http/middleware/policies/*"
+      ],
+    },
+  },
+  "include": [
+    "src/**/*.ts",
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "ts-node": {
+    "require": [
+      "tsconfig-paths/register"
+    ]
+  }
+}

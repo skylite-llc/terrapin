@@ -1,0 +1,20 @@
+import { Request, Response } from 'express'
+import ControllerFactory from "@decorators/ControllerFactory.decorator"
+import {Get} from "@decorators/MethodDecoratorFactory.decorator"
+import { Service } from "typedi"
+
+ @ControllerFactory("/api/CONTROLLER_NAME")
+ @Service()
+export default class CONTROLLER_NAME EXTENSION {
+    /**
+     * Constructor
+     */
+    constructor() {
+        SUPER
+    }
+
+    @Get("")
+    public index(req: Request, res: Response): Response {
+        return res.status(200).json({})
+    }
+}

@@ -1,0 +1,12 @@
+ximport {NextFunction, Request, Response} from "express";
+import MiddlewareFactory from "@decorators/MiddlewareFactory.decorator";
+
+@MiddlewareFactory('MIDDLEWARE_NAME')
+export default class MIDDLEWARE_NAME EXTENSION {
+    /**
+     * Checks if MIDDLEWARE_NAME passes
+     */
+    public passes(req: Request, res: Response, next: NextFunction) {
+        return next()
+    }
+}

@@ -1,0 +1,38 @@
+{
+  "locations": {
+    "Controller": "./src/presentation/http/controllers",
+    "Exception": "./src/application/core/exceptions",
+    "Middleware": "./src/presentation/http/middleware",
+    "Model": "./src/domain/models",
+    "Job": "./src/infrastructure/jobs",
+    "Policy": "./src/presentation/http/middleware/policies",
+    "Repository":  "./src/data/repositories",
+    "Request": "./src/presentation/http/middleware/requests",
+    "Service": "./src/domain/services",
+    "Transformer": "./src/presentation/transformers"
+  },
+  "extensions": {
+    "Controller": "./src/presentation/http/controllers/api/BaseApiController",
+    "Exception": "./src/application/core/exceptions/BaseException",
+    "Middleware": "./src/presentation/middleware/BaseApiMiddleware",
+    "Model": "./src/domain/models/BaseModel",
+    "Job": "./src/infrastructure/jobs/BaseJob",
+    "Policies": "./src/presentation/http/middleware/policies/BasePolicy",
+    "Repository": "./src/data/repositories/BaseRepository",
+    "Request": "./src/presentation/http/middleware/requests/BaseRequest",
+    "Service": "./src/domain/services/BaseService",
+    "Transformer": "./src/presentation/transformers/BaseTransformer"
+  },
+  "enabled_templates": [
+     "controller",
+     "exception",
+     "middleware",
+     "job",
+     "model",
+     "policy",
+     "repository",
+     "request",
+     "service",
+     "transformer"
+  ]
+}

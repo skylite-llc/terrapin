@@ -1,0 +1,6 @@
+/**
+ * @interface REPOSITORY_NAME
+ **/
+export default class REPOSITORY_NAME extends BaseRepository<REPOSITORY_NAME> {
+
+}

@@ -1,0 +1,13 @@
+import { Entity, PrimaryKey, Property } from '@mikro-orm/core';
+
+@Entity()
+export default class ENTITY_NAME EXTENSION {
+    constructor() {
+        SUPER
+    }
+
+    @PrimaryKey()
+    PRIMARY_KEY_NAME: string;
+
+    /* TIMESTAMPS */
+}
